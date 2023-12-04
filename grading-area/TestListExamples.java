@@ -22,7 +22,7 @@ public class TestListExamples {
     assertEquals(expected, merged);
   }
 
-  @Test
+  @Test(timeout = 500)
   public void testFilter() {
     List<String> strs = new ArrayList<>();
     strs.add("a");
@@ -32,7 +32,7 @@ public class TestListExamples {
     assertEquals(filtered, Arrays.asList("a", "apple"));
   }
 
-  @Test
+  @Test(timeout = 500)
   public void testMerge() {
     List<String> strs1 = new ArrayList<>();
     List<String> strs2 = new ArrayList<>();
